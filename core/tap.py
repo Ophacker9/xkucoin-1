@@ -9,7 +9,7 @@ from core.info import get_info
 
 def try_tap(cookie, molecule, proxies=None):
     url = "https://www.kucoin.com/_api/xkucoin/platform-telebot/game/gold/increase?lang=en_US"
-    increment = random.randint(80, 100)
+    increment = random.randint(10, 20)
     form_data = {"increment": str(increment), "molecule": str(molecule)}
     base.log(f"{base.yellow}Sending {increment} taps...")
 
